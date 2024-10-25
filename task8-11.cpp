@@ -61,13 +61,13 @@ int main()
     cout << "Enter a word 11:" << endl;
     cin >> word11;
     i = 0;
-    int str_pos{sent11.find('C')};
+    int str_pos{sent11.find("Can")};
     while (i != sent11.length())
     {
         if (str_pos < sent11.length())
         {
             sent11.replace(str_pos, 3, word11);
-            str_pos = sent11.find('c');
+            str_pos = sent11.find("can");
         }
         i++;
     }
